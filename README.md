@@ -13,13 +13,39 @@ Activate the virtual environment: venv\Scripts\activate
 Install the dependencies: pip install -r requirements.txt                                                                                  
 
 
-DATABASE :   Mysql database............(The table representation of Mysql database is attached below as screenshot)                                                   
-
-Download :   "client_secret_509730660755-rnaj4ujvaun0tvhem1qkoglt7hpgbadn.apps.googleusercontent.com.json" ....(File is attached in mail )                  
+Download :   "client_secret_509730660755-rnaj4ujvaun0tvhem1qkoglt7hpgbadn.apps.googleusercontent.com.json" ....(File is attached in mail & GitHub )                  
 
 Open Gmail_Api.py file... and Add the path of the above downloaded Json file in "CLIENT_SECRET_FILE".....(remove exisiting Json file path)              
 
-RUN the project file : python Gmail_Api.py                                                                                                                     
+DATABASE :   Mysql database............(The table representation of Mysql database is attached below as screenshot)        
+
+
+DB_CONFIG = {                                                                                                                         
+    'host': '127.0.0.1',                                                                                      
+    'database': 'gmailapi',                                                                                         
+    'user': 'root',                                                                                                              
+    'password': 'root'                                                                                                            
+}..........................{Update the DB_CONFIG details with your 'database', 'user' & 'password'}
+
+Then create table ('emails')  and columns ('id', 'subject', 'sender', 'internal_date', 'body', 'message_id')
+
+Query:                                                                                                                                 
+use gmailapi;.........(put your database name)                                                                            
+CREATE TABLE emails (                                                                                                  
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    subject VARCHAR(255),                                                                                           
+    sender VARCHAR(255),                                                                                              
+    internal_date DATETIME,                                                                                                
+    body TEXT,                                                                                                               
+    message_id VARCHAR(255) UNIQUE                                                                                        
+);                                                                                                                     
+
+RUN the project file : python Gmail_Api.py                                                                                             
+                                                                                                               
+While execution of the program, Gmail API ask you to signin with your gmailaccount ;then it ask couple of permission click "continue"
+to access your mail to read and modify.                                                                                                
+
+Now you can safely close the browser window and see your terminal for output.
 
 OUTPUT:                                                                                                                                         
 
