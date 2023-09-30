@@ -25,9 +25,9 @@ DB_CONFIG = {
     'database': 'gmailapi',                                                                                         
     'user': 'root',                                                                                                              
     'password': 'root'                                                                                                            
-}..........................{Update the DB_CONFIG details with your 'database', 'user' & 'password'}
+}..........................{Update the DB_CONFIG details with your 'database', 'user' & 'password' in Gmail_Api.py }
 
-Then create table ('emails')  and columns ('id', 'subject', 'sender', 'internal_date', 'body', 'message_id')
+In "MYSQL WORKBENCH APP" {create table ('emails') and columns ('id', 'subject', 'sender', 'internal_date', 'body', 'message_id')}
 
 Query:                                                                                                                                 
 use gmailapi;.........(put your database name)                                                                            
