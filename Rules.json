@@ -1,0 +1,33 @@
+{
+    "rules": [
+        {
+            "conditions": [
+                {
+                    "field": "Received Date/Time",
+                    "predicate": "Less than",
+                    "value": "2023, 9, 28, 14, 30, 0"
+               },
+                {
+                    "field": "From",
+                    "predicate": "Does not Contain",
+                    "value": "Quora Digest <english-personalized-digest@quora.com>"
+               },
+                {
+                    "field": "Subject",
+                    "predicate": "Does not Equal",
+                    "value": "Is seeing 11:11 and 111 a good sign for twin flames?"
+               }
+            ],
+            "predicate": "Any",
+            "actions": [
+                {
+                    "action": "Mark as Read"
+                },
+                {
+                    "action": "Move Message",
+                    "folder": "STARRED"
+                }
+            ]
+        }
+    ]
+}
