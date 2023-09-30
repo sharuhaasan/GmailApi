@@ -15,7 +15,7 @@ Install the dependencies: pip install -r requirements.txt
 
 DATABASE :   Mysql database............(The table representation of Mysql database is attached below as screenshot)                                                   
 
-Download :   "client_secret_509730660755-rnaj4ujvaun0tvhem1qkoglt7hpgbadn.apps.googleusercontent.com.json" ....(File is attached in mail & Github)                  
+Download :   "client_secret_509730660755-rnaj4ujvaun0tvhem1qkoglt7hpgbadn.apps.googleusercontent.com.json" ....(File is attached in mail )                  
 
 Open Gmail_Api.py file... and Add the path of the above downloaded Json file in "CLIENT_SECRET_FILE".....(remove exisiting Json file path)              
 
