@@ -42,10 +42,13 @@ CREATE TABLE emails (
 
 RUN the project file : python Gmail_Api.py                                                                                             
                                                                                                                
-While execution of the program, Gmail API ask you to signin with your gmailaccount ;then it ask couple of permission click "continue"
-to access your mail to read and modify.                                                                                                
+While execution of the program, Gmail API ask you to signin with your gmailaccount ;then it ask couple of permission select "All" & click "continue"
+to access your mail to read and modify.  
 
 Now you can safely close the browser window and see your terminal for output.
+
+# Please send your Gmail account ID                                                                                                                                
+{"The Gmail account user who is going to Test the project; the permissions has been granted by me, so I need to add that Gmail account user to the 'Test Users' in the Google Cloud Console."}                                              
 
 OUTPUT:                                                                                                                                         
 
